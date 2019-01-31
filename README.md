@@ -1,7 +1,7 @@
 # Resume generator
 Web based editor to create Resume in a customizable template  
   
-Try it : 
+Try it : https://vinaysomawat.github.io/Resume-Builder/
 
 **Note** : Click the "VIEW INSTRUCTIONS" button in the editor to read usage instructions.
 
