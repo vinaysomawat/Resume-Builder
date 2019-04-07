@@ -1,7 +1,7 @@
 # Resume generator
 Web based editor to create Resume in a customizable template with the facility to save the file in .pdf formate.  
   
-Live Demo : resumebuilder.surge.sh
+###### Live Demo : https://resumebuilder.surge.sh/
 
 
 **Note** : Click the "VIEW INSTRUCTIONS" button in the editor to read usage instructions.
