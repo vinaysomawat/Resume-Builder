@@ -124,12 +124,9 @@ li li {
 	margin-top: auto;
 }
 #contact {
-	position: absolute;
-	bottom: 0;
-	right: 20px;
-	text-align: right;
+	text-align: center;
 }
-#contentMinor , #contentBranch , #contactLink2 {
+#contentMinor , #contentBranch {
 	display: none;
 }
 

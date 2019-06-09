@@ -77,11 +77,15 @@ function changeTemplate(toggleType,toggleValue)
 			{
 				$('#contactLink1').hide();
 				$('#contactLink2').hide();
+				$('#contactlink5').hide();
+				$('#contactlink6').hide();
 			}
 			else if(toggleValue=='contact4')
 			{
 				$('#contactLink1').show();
 				$('#contactLink2').hide();
+				$('#contactlink5').show();
+				$('#contactlink6').show();
 			}
 			else
 			{
