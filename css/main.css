@@ -12,9 +12,11 @@ body {
 }
 #left * {
 	color: #eee;
+    font-family: 'Montserrat', sans-serif;
 }
 #left h3 , #left h4 {
 	color: #fff;
+    margin-top: 5px;
 }
 #left .btn {
 	color: #fff;

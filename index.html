@@ -8,28 +8,21 @@
 	<link rel="stylesheet" type="text/css" href="css/thin_scroll.css">
 	<link rel="stylesheet" type="text/css" href="css/theme.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" type='text/css'>
 	<meta name="description" content="Online document editor like interface to create and save Resume">
 	<meta name="keywords" content="resume,cv,maker,creator,generator,nitw,warangal,nit warangal,projects,computer science">
 </head>
 
 <body>
-
 <div class="container-fluid">
-
 	<div class="row">
-
-
 		<div class="col-sm-3 no-print" id="left">
-
 			<div id="panel">
-
-					<h3 class="text-center" data-toggle="modal" data-target="#aboutModal">Resume Builder</h3>
-                    <button class="btn btn-block btn-primary" data-toggle="modal" data-target="#aboutModal">About Resume Builder</button>
-
-
-				<button class="btn btn-block btn-primary" data-toggle="modal" data-target="#usageModal">VIEW INSTRUCTIONS</button>
+					<h3 class="text-center" data-toggle="modal">Resume</h3>
+             <!--   <button class="btn btn-block btn-primary" data-toggle="modal" data-target="#usageModal">VIEW INSTRUCTIONS</button> -->
 				<button class="btn btn-block btn-success" onclick="window.print()">PRINT AS PDF</button>
 
 				<hr>
@@ -573,7 +566,7 @@
 	</div>
 
 </div>
-
+<!--
 
 <div class="modal fade" id="usageModal" tabindex='-1'>
 	<div class="modal-dialog">
@@ -618,6 +611,8 @@
 	</div>
 </div>
 
+-->
+
 <div class="modal fade" id="sectionToggleModal" tabindex='-1'>
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -639,26 +634,11 @@
 	</div>
 </div>
 
-<div class="modal fade" id="aboutModal" tabindex="-1">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4><strong>Resume Builder:</strong></h4><h5>This Resume Builder is created by</h5><h5><strong>Vinay Somawat (NIT Warangal)</strong> and <strong>Nitish Garg (IIT Guwahati).</strong></h5>
-                <br>
-                <h5><strong>Technologies used:</strong></h5>
-                <ul>
-                    <li>HTML/CSS/JavaScript</li>
-                    <li>Chrome Browser</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
 
 </body>
 
