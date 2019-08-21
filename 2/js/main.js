@@ -1,6 +1,6 @@
 document.querySelector('#page').contentEditable = true;
 
-defaultTemplateVars = [ "fontDroid" , "caseNormal" , "titleRuled" , "ruleAbove" , "imageShow" , "rollShow" , "course1" , "tableShow" , "edyearFirst" , "experience1" , "projects1" ]
+defaultTemplateVars = [ "fontMonospace" , "caseNormal" , "titleRuled" , "ruleAbove" , "imageShow" , "rollShow" , "course1" , "tableShow" , "edyearFirst" , "experience1" , "projects1" ]
 
 $('.toggle-option').click(function(){
 	toggleType = $(this).attr('data-toggle');
@@ -28,24 +28,6 @@ $('input[name="sectionToggle"]').change(function(){
 	toggleSection($(this).val(),$(this).is(':checked'));
 });
 
-
-function template(value)
-{
-	if(value=='default')
-	{
-		$('#defaultTemplateBtn').removeClass('btn-default').addClass('btn-danger');
-		$('#customTemplateBtn').removeClass('btn-danger').addClass('btn-default');
-		$('#customTemplateOptions').hide();
-		for(i=0;i<defaultTemplateVars.length;i++)
-			$('#'+defaultTemplateVars[i]).click();
-	}
-	else
-	{
-		$('#customTemplateBtn').removeClass('btn-default').addClass('btn-danger');
-		$('#defaultTemplateBtn').removeClass('btn-danger').addClass('btn-default');
-		$('#customTemplateOptions').show();
-	}
-}
 
 function toggleSection(sectionName,toggleState)
 {
@@ -134,13 +116,13 @@ function changeTemplate(toggleType,toggleValue)
 
 		case 'font':
 			if(toggleValue=='fontVerdanaSans')
-				$('#page').removeClass('droid').removeClass('roboto').removeClass('verdana-serif').addClass('verdana-sans');
-			else if(toggleValue=='fontVerdanaSerif')
-				$('#page').removeClass('verdana-sans').removeClass('droid').removeClass('roboto').addClass('verdana-serif');
+				$('#page').removeClass('droid').removeClass('roboto').removeClass('montserrat').addClass('verdana-sans');
+			else if(toggleValue=='fontMonospace')
+				$('#page').removeClass('verdana-sans').removeClass('droid').removeClass('roboto').addClass('montserrat');
 			else if(toggleValue=='fontRoboto')
-				$('#page').removeClass('verdana-serif').removeClass('verdana-sans').removeClass('droid').addClass('roboto');
+				$('#page').removeClass('montserrat').removeClass('verdana-sans').removeClass('droid').addClass('roboto');
 			else if(toggleValue=='fontDroid')
-				$('#page').removeClass('roboto').removeClass('verdana-serif').removeClass('verdana-sans').addClass('droid');
+				$('#page').removeClass('roboto').removeClass('montserrat').removeClass('verdana-sans').addClass('droid');
 			break;
 		case 'case':
 			if(toggleValue=='caseNormal')

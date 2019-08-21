@@ -12,6 +12,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 	<meta name="description" content="Online document editor like interface to create and save Resume">
 	<meta name="keywords" content="resume,cv,maker,creator,generator,nitw,warangal,nit warangal,projects,computer science">
 </head>
@@ -28,13 +29,12 @@
 				<hr>
 
 				<h4 class="text-center">Template settings</h4>
-				<button id="defaultTemplateBtn" class="btn btn-block btn-danger" onclick="template('default');">Use official NITW template</button>
-				<button id="customTemplateBtn" class="btn btn-block btn-default" onclick="template('custom');">Use custom template</button>
+                <br>
 				<h5>
 					Contact lines
 					<div class="toggle-button">
-						<div class="toggle-option" data-toggle="contact" id="contact3">2</div>
-						<div class="toggle-option selected" data-toggle="contact" id="contact4">3</div>
+						<div class="toggle-option selected" data-toggle="contact" id="contact3">2</div>
+						<div class="toggle-option" data-toggle="contact" id="contact4">3</div>
 						<div class="toggle-option" data-toggle="contact" id="contact5">4</div>
 					</div>
 				</h5>
@@ -72,14 +72,13 @@
 
 				<br>
 
-				<div id="customTemplateOptions">
 					<h5>
 						Font type
 						<div class="toggle-button">
 							<div class="toggle-option" data-toggle="font" id="fontVerdanaSans">1</div>
-							<div class="toggle-option" data-toggle="font" id="fontMonospace">2</div>
+							<div class="toggle-option selected" data-toggle="font" id="fontMonospace">2</div>
 							<div class="toggle-option" data-toggle="font" id="fontRoboto">3</div>
-							<div class="toggle-option selected" data-toggle="font" id="fontDroid">4</div>
+							<div class="toggle-option" data-toggle="font" id="fontDroid">4</div>
 						</div>
 					</h5>
 					<h5>
@@ -105,27 +104,6 @@
 					</h5>
 					<br>
 					<h5>
-						Table border
-						<div class="toggle-button">
-							<div class="toggle-option selected" data-toggle="table" id="tableShow">Show</div>
-							<div class="toggle-option" data-toggle="table" id="tableHide">Hide</div>
-						</div>
-					</h5>
-					<h5>
-						Education year column
-						<div class="toggle-button">
-							<div class="toggle-option selected" data-toggle="edyear" id="edyearFirst">First</div>
-							<div class="toggle-option" data-toggle="edyear" id="edyearLat">Last</div>
-						</div>
-					</h5>
-					<h5>
-						Experience layout
-						<div class="toggle-button">
-							<div class="toggle-option selected" data-toggle="experience" id="experience1">L1</div>
-							<div class="toggle-option" data-toggle="experience" id="experience2">L2</div>
-						</div>
-					</h5>
-					<h5>
 						Projects layout
 						<div class="toggle-button">
 							<div class="toggle-option selected" data-toggle="projects" id="projects1">L1</div>
@@ -133,7 +111,6 @@
 						</div>
 					</h5>
 					<br>
-				</div>
 
 				<h5>
 					<button class="btn btn-sm btn-block btn-primary" data-toggle="modal" data-target="#sectionToggleModal">Show/Hide sections</button>
@@ -170,17 +147,15 @@
 			<div id="page" class="droid">
 
 				<div class="row" style="margin-bottom:10px;">
-				<div class="col-sm-12">
-					<div id="info" style="text-align: center; padding-top:40px; padding-bottom: 15px;">
-						<p id="contentName" style="font-family: 'Amarante'; font-size: 60px;">Abc xyz</p>
+				<div class="col-sm-8">
+					<div id="info" style="padding-top:50px; padding-bottom: 0px;">
+						<p id="contentName" style=" font-size: 50px;">Abc xyz</p>
 					</div>
-					<div id="contact">
-						<p>xyz.xyz@gmail.com | +91-9999999999 | abc.github.io</p>
-						<p style="margin-top:-10px"><span id="contactLink2">Github://abcxyz  | </span>
-						<span id="contactLink1">Linkedln://xyzabc | </span>
-						<span id="contactlink5">CodeChef://absnx | </span>
-						<span id="contactlink6">HackerRank://absnxy</span></p>
-					</div>
+                    </div>
+                    <div class="col-sm-4" style="text-align: right;padding-top: 40px; padding-bottom: 0px;">
+						<p>+91-9999999999</p>
+                            <p style="margin-top:-10px"><span id="contactLink1">xyzabc@hotmail.com</span>
+                            <p style="margin-top:-10px; margin-bottom: 0px;"><span id="contactLink2">xyzabc.github.io</span></p>
 				</div>
 				</div>
 
@@ -193,32 +168,14 @@
 					</div>
 					<ul class="nobullet">
 					<li>
-						<table class="table customBordered" id="educationTable">
-							<tr>
-								<td class="header"><strong>Year</strong></td>
-								<td class="header"><strong>Degree / Certificate</strong></td>
-								<td class="header"><strong>Institute / Board</strong></td>
-								<td class="header"><strong>CGPA/Percentage</strong></td>
-							</tr>
-							<tr>
-								<td>2015 - Present</td>
-								<td>B.Tech</td>
-								<td>National Institute of Technology, Warangal</td>
-								<td>9.00 (Current)</td>
-							</tr>
-							<tr>
-								<td>2015</td>
-								<td>Senior secondary</td>
-								<td>CBSE board</td>
-								<td>97.0%</td>
-							</tr>
-							<tr>
-								<td>2013</td>
-								<td>Secondary</td>
-								<td>CBSE board</td>
-								<td>10.0</td>
-							</tr>
-						</table>
+                        <div class="text"><strong>B.Tech-Computer Science and Engineering,</strong> National Institute of Technology, Warangal</div>
+                        <div class="text">Aggregate CGPA: <strong>8.0/10</strong><br>Expected Graduation: <strong>MAY, 2020</strong></div>
+                        <br>
+                        <div class="text"><strong>12th Intermediate-PCM,</strong> Board of Secondary Education, Ajmer</div>
+                        <div class="text">Aggregate Percentage: <strong>90.60%</strong><br>Passed: <strong>APRIL, 2015</strong></div>
+                        <br>
+                        <div class="text"><strong>10th High School,</strong> Board of Secondary Education, Ajmer</div>
+                        <div class="text">Aggregate Percentage: <strong>80.00%</strong><br>Passed: <strong>APRIL, 2013</strong></div>
 					</li>
 					</ul>
 				</div>
@@ -232,25 +189,17 @@
 					</div>
 					<ul>
 					<li>
-						<div>
-						<div class="title">XYZ Engineer at 'ABC'</div>
-						<div class="time right">May 2016 - July 2016</div>
-						</div>
-						<div>
-						<div class="link right">www.abc.in</div>
-						<div class="text">Analysed app usage statistics to recommend items based on user's preference.</div>
-						</div>
+						<div class="text"><strong>Software Engineering Intern,</strong> ThinkPedia LLP, Gurugram</div>
+                        <div class="text">MAY 2019 - JULY 2019</div>
+                        <div class="text">Worked on Customer Web Application for social media management.<br>
+Developed frontend using Angular 7 & Bootstrap and backend Rest-APIs using Spring-boot & MongoDB.<br>
+Worked in System Design, System Testing & API integration from scratch.</div>
 					</li>
 					<li>
-						<div>
-						<div class="title">XYZ Engineer at 'ABC'</div>
-						<div class="time right">Dec 2015</div>
-						</div>
-						<div>
-						<div class="link right">www.abc.in</div>
-						<div class="text">Designed methods to improve the existing unit test mechanism.</div>
-						</div>
-					</li>
+						<div class="text"><strong>Position,</strong> Company name, place</div>
+                        <div class="text">XXX 2019 - XXX 2019</div>
+                        <div class="text">Point 1<br>Point 2</div>
+                    </li>
 					</ul>
 				</div>
 
@@ -336,28 +285,6 @@
 						</div>
 						<div>
 						<div class="link right">goo.gl/link</div>
-						</div>
-						<div>
-						<div class="text">Graphical interface to share files over institute's network.</div>
-						</div>
-					</li>
-					<li>
-						<div>
-						<div class="title">Project title</div>
-						<div class="time right">Nov 2015</div>
-						</div>
-						<div>
-						<div class="mentor tab">Mentor name</div>
-						<div class="link right">github.com/link</div>
-						</div>
-						<div>
-						<div class="text">Graphical interface to share files over institute's network.</div>
-						</div>
-					</li>
-					<li>
-						<div>
-						<div class="title">Project title</div>
-						<div class="time right">Aug 2015 - Sep 2015</div>
 						</div>
 						<div>
 						<div class="text">Graphical interface to share files over institute's network.</div>

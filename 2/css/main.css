@@ -1,13 +1,13 @@
 
 body {
-	background-color: #4D805D;
+	background-color: #8E44AD;
 	line-height: 1.4em;
 	padding: 0;
 	margin: 0;
 }
 
 #left {
-	background-color: #4D805D;
+	background-color: #8E44AD;
 	line-height: 1em;
 }
 #left * {
@@ -126,7 +126,7 @@ li li {
 	margin-top: auto;
 }
 #contact {
-	text-align: center;
+	text-align:right;
 }
 #contentMinor , #contentBranch {
 	display: none;
@@ -248,8 +248,8 @@ td.header {
 #page.verdana-sans * {
 	font-family: "Verdana", sans-serif;
 }
-#page.verdana-serif * {
-	font-family: "Verdana", serif;
+#page.montserrat * {
+	font-family: 'Montserrat', sans-serif;
 }
 #page.roboto * {
 	font-family: 'Roboto', sans-serif;
@@ -257,13 +257,13 @@ td.header {
 #page.droid * {
 	font-family: 'Droid Serif', serif;
 }
-.droid strong , .verdana-sans strong , .verdana-serif strong {
+.droid strong , .verdana-sans strong , .montserrat strong {
 	font-weight: 700;
 }
 .roboto strong {
 	font-weight: 500;
 }
-.droid .title , .verdana-sans .title , .verdana-serif .title {
+.droid .title , .verdana-sans .title , .montserrat .title {
 	font-weight: 700;
 }
 .roboto .title {
